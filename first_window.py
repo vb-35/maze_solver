@@ -11,6 +11,7 @@ class Window():
 
     def redraw(self):
         self.__root.update_idletasks()
+        self.__root.update()
 
     def wait_for_close(self):
 
@@ -20,6 +21,7 @@ class Window():
     
     def close(self):
         self.running=False
+        
     
     def draw_line(self,line,fill_color):
         line.draw(self.__canvas,fill_color)
